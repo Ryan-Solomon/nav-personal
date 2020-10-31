@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import useWindowSize from './hooks/useWindowSize';
 
 const Nav = () => {
+  const currentWindowWidth = useWindowSize();
+
   return (
     <>
       <nav className='header__nav'>
